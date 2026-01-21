@@ -1,0 +1,15 @@
+import React from 'react';
+import './style.css';
+
+function Button({ children, variant = 'primary', onClick, className = '' }) {
+  return (
+    <button 
+      className={`btn btn-${variant} ${className}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+}
+
+export default Button;
