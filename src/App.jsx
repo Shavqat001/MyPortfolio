@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaGithub, FaTelegram, FaYoutube } from 'react-icons/fa'
-import { SiWhatsapp } from 'react-icons/si'
+import { SiWhatsapp } from 'react-icons/si';
+import photo from '/src/assets/me.jpg';
 import './App.css'
 
 function App() {
@@ -64,13 +65,7 @@ function App() {
         </div>
         <div className="hero-content">
           <div className="hero-image-container">
-            <div className="image-placeholder">
-              <span>📷</span>
-              <p>Добавьте ваше фото</p>
-            </div>
-            {/* Раскомментируйте и замените на ваше фото:
-            <img src="/your-photo.jpg" alt="Ваше фото" className="hero-image" />
-            */}
+            <img src={photo} alt="Ваше фото" className="hero-image" />
           </div>
           <div className="hero-text">
             <h1 className="hero-title">
